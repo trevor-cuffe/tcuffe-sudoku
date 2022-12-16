@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+
+    <link rel="stylesheet" href="/styles/sudoku.css">
+
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+
+</head>
+<body>
+
+    <h1 class="text-center">SUDOKU!</h1>
+    <div id="difficultyButtons" class="text-center difficulty-group">
+        <button class="difficulty">easy</button>
+        <button class="difficulty">medium</button>
+        <button class="difficulty">hard</button>
+        <button class="difficulty">expert</button>
+    </div>
+
+    <div class = "container align-items-center">
+        <table class="gameTable"></table>
+
+        <div class="container side-panel">
+            <div class = "timer-container">
+                <span id="timerMinutes">00</span>:<span id="timerSeconds">00</span>
+                <span id="timerButton"></span>
+            </div>
+            <div class = "container userPanel">
+                <button id="newGame">RESET GAME</button>
+                <table class = "numberHighlightGrid"></table>
+                <button id = "pencilNotes">Notes <span id="onOff">OFF</span></button>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="/js/sudoku.js"></script>
+    
+</body>
+</html>
